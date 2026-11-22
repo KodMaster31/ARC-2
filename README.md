@@ -1,8 +1,8 @@
-# ARC-2
+# ARC-2 Ne ışe Yarar Ve Nedir
 
-1-bit ve 2-bit seviyesinde çalışan küçük bir soyut CPU / sanal makine denemesi. Amaç fetch-decode-execute döngüsünü, register ve bellek davranışını farklı katmanlarda yan yana görmek: Verilog donanım modeli, C simülatörü ve x86_64 assembly karşılığı.
+1-bit ve 2-bit seviyesinde çalışan küçük bir soyut CPU. Amaç fetch-decode-execute döngüsünü, register ve bellek davranışını farklı katmanlarda yan yana görmek: Verilog donanım modeli, C simülatörü ve x86_64 assembly karşılığı.Kısaca eğitim odaklı ama Doom çalıştıran olursa helal olsun :D
 
-## Repo Yapısı
+## Repo 
 
 - **Verilog:** `arc01.asm`, `arch02.asm`, `arc03.asm` — isimleri `.asm` olsa da içerikleri Verilog modülleri. 1-bit `acc` ve 2-bit `pc` ile başlayan temel modelden dallanma (`JMP`/`JZ`) ve karşılaştırma (`CMP`) eklenmiş 2-bit sürüme doğru ilerliyor.
 - **C Simülatörü:** `arc.c`, `arc2.c` — `stdin`'den gelen komutları okuyup `acc`, `pc` ve bellek üzerindeki etkisini çalıştıran basit simülatörler.
@@ -18,8 +18,9 @@
 - `11` — Kontrol komutları (`JMP`, `JZ`, `OUT`, `HALT` vb.).
 
 ## Kullanım
+Zip indir ve klasöre cıkart.Ve klasorde terminal ac.Ve alttaki Calistirma kismina gec
 
-### C Simülatörü
+### Çalıştırma
 
 ```bash
 gcc arc2.c -o arc_sim
